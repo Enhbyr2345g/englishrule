@@ -5,231 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
 
-    <style>
-    body{
-        background-color: rgb(217,217,217);
-    }
-    header{
-        height: 100px;
-        width: auto;
-        background-color: rgb(174,229,209);
-        padding:0 10%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .HeadLogo
-    {
-        background-color: none;
-        font-family: 'Times New Roman';
-        font-size: 32px;
-        color: rgb(65,83,128);
-        padding: auto;
-    }
-    .HeadSearch input
-    {
-        height: 35px;
-        width: 200px;
-
-        display: flex;
-        align-items: center;
-        justify-items: center;
-
-        background-color: white;
-        font-family: 'Times New Roman';
-        font-size: 14px;
-        border: 2px solid ;
-        border-color: rgb(65,83,128);
-        border-radius: 5px;
-    }
-    
-    menu{
-        height: auto;
-        width: auto;
-
-        display: flex;
-        flex-direction:row;
-        flex-wrap: 0;
-        align-items: end;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 10px;
-
-        background-color: rgb(65,83,128);
-        color: rgb(217,217,217);
-        font-size: 18px;
-        margin: 0;
-        padding:5px 10% 0;
-
-    }
-    #MainBar
-    {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-
-        background-color: rgb(217,217,217);
-        color: rgb(65,83,128);
-        padding: 10px 20px;
-        border-radius: 5px 5px 0 0;
-    }
-    .menuBar
-    {
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-
-        padding: 10px 20px;
-
-    }
-    .menuBar:hover
-    {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-
-        background-color: rgb(217,217,217);
-        color: rgb(65,83,128);
-        padding: 10px 20px;
-        border-radius: 5px 5px 0 0;
-    }
-    content{
-        width: auto;
-        height: auto;
-        display: grid;
-        grid-template-columns: 7fr 3fr;
-        
-        gap:20px;
-        margin: 30px 6%;
-
-    }
-    .MainContent p{
-        font-family: Arial;
-        font-size: 12px;
-    }
-
-    .MainContent
-    {   
-        height: auto;
-        max-width: 1000px;
-        background-color: rgb(242,242,242);
-        color:black;
-        padding: 10px 30px ;
-
-        border: none;
-        border-radius: 20px;
-    }
-    .SupportContent
-    {
-        height: auto;
-        width: auto;
-        display: grid;
-        grid-template-rows: 1fr ;
-        gap: 30px;
-        border-radius: 20px;
-        
-    }
-
-    .Random
-    {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-
-        background-color: rgb(242,242,242);
-        padding:20px 30px;
-        border-radius: 20px;
-    }
-
-    .RandomName
-    {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-
-        background-color: rgb(217,217,217);
-        color: black;
-        padding:10px 10px;
-        margin-bottom: 20px;
-        border: 2px solid rgb(65,83,128);
-        border-radius: 10px;
-
-    }
-    .RandomExplain
-    {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-items: center;
-
-        background-color: none;
-        color: black;
-        padding:0 10px;
-        border :2px solid rgb(65,83,128);
-        border-radius: 10px;
-    }
-    .History
-    {
-        height: auto;
-        width: 1fr;
-        background-color: rgb(242,242,242);
-        font-family: Arial;
-        font-size: 12px;
-        color: black;
-
-        padding:10px 20px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-    }
-    .History p{
-        background-color: rgb(217,217,217);
-        padding:10px;
-        border: 2px solid rgb(65,83,128);
-        border-radius: 10px;
-    }
-    footer{
-        height: 100px;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(65,83,128);
-
-        
-    }
-
-    @media (max-width: 800px) {
-        content
-        {
-            grid-template-columns: auto;
-            margin:20px 5px;
-        }
-        .SupportContent
-        {
-            grid-template-columns: auto;
-        }
-        .HeadSearch input 
-        {
-            
-            height: 40px;
-            width: 40px;
-            border-radius: 20px;
-        }
-        menu{
-            row-gap:5px;
-            margin: 0;
-            padding:5px 0 0;
-        }
-    }
-
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -261,8 +37,8 @@ border-radius
         </div>
     </header>
     <menu>
-        <div class="menuBar" id="MainBar">Home</div>
-        <div class="menuBar">Parts of speech</div>
+        <div class="menuBar" >Home</div>
+        <div class="menuBar" id="MainBar">Parts of speech</div>
         <div class="menuBar">Figures of speech</div>
         <div class="menuBar">Tenses</div>
         <div class="menuBar">Sentences</div>
@@ -271,23 +47,128 @@ border-radius
     </menu>
     <content>
         <div class="MainContent">
-            <h4>Welcome to EnglishGrammar.org!</h4>
-            <p>Explore the essentials and intricacies of English grammar. Whether for writing or everyday conversation, grammar is the foundation of clear communication.</p>
-            <h3>Getting Started</h3>
-            <p>If you’re a new user, we recommend signing up for free updates and bookmarking the online grammar checker right now. Do this before you continue reading to ensure you have the right tools to improve your grammar and become a better writer.
+            <div class="Rules"> 
+                <h2>Noun</h2>
+                A noun is a word used to refer diveople, animal, object, substances, states, ideas, and feelings. A noun functions as a subject
+                or object of a verb and can be modified by an adjective.
+                <br> <br>
+                <strong>Example: </strong> John, lion, table, freedom, love
+                <ul>
+                    <li>I love in United States <strong>America</strong>.</li>
+                    <li><strong>Emma</strong> is my sister.</li>
+                    <li>I love to play with my <strong>cat</strong>.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Pronoun</h2>
+                A pronoun is used in the in the place of a noun or phrase. Or Pronouns 
+                are words that substitute a noun or another pronoun.
+                <br> <br>
+                <strong>Example: </strong> I, you, he, she, it, who, themselves
+                <ul>
+                    <li><strong>This</strong> house belongs to us.</li>
+                    <li><strong>I</strong> won the race.</li>
+                    <li>The matter is between Olivia and <strong>me</strong>.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Verbs</h2>
+                A verb in syntax is a part of speech which conveys action (bring, read, walk, run, learn)
+                or state of being (exist, stand) or Verb have traditionally been defined as words that show action or state of being.
                 <br><br>
-            Begin your journey with our interactive, online multiple-choice exercises, which are also available as downloadable PDFs. Access all our latest exercises by visiting the Grammar Exercises page. If you’re looking for a specific topic or exercise, please use the search form at the top of this page.</p>
-            <h3>2025 Grammar Guide</h3>
-            <p>We value your feedback on our popular guide, ‘120 Grammar and Vocabulary Mistakes to Avoid,’ freshly updated for 2025. If you haven’t explored it yet, download it now by signing up for our newsletter. Upon confirming your subscription, we’ll send you the PDF download and weekly updates, including the best infographics on grammar, writing, and productivity. No worries, it’s free, and your privacy is our top priority. Your email won’t be shared with anyone else, and you can unsubscribe at any time.
-                <br><br>
-            Connect with us on Facebook by liking our page and follow us on X (@GrammarUpdates) for the latest updates and resources in your newsfeed.</p>
-            <h3>We’d Love to Hear from You</h3>
-            <p>If there’s a specific topic you’d like to learn more about or if you have suggestions to improve our site, we’d love to hear from you. Use our contact form or share your thoughts via one of our social media channels.
-                <br><br>
-            We hope you enjoy the site and wish you much joy on your journey to mastering English grammar.
-                <br><br>
-            Here’s to your successful learning journey!</p>
+                Sentences in English have a main verb which is stated in tense (Simple present, simple past, simple future...).
+                <br> <br>
+                <strong>Example: </strong>
+                <ul>
+                    <li>William <strong>writes</strong> short stories at home.</li>
+                    <li>Emma is <strong>buying</strong> a newspaper today.</li>
+                    <li>Student <strong>went</strong> to the  playing ground often.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Adjective</h2>
+                An adjective is a word which modifies a noun or a pronoun. Adjectives
+                are describing words.Large, grey, and friendlly are all example of adjectives.
+                <br> <br>
+                <strong>Example: </strong>
+                <ul>
+                    <li>They live in <strong>big, beautiful</strong>.</li>
+                    <li>This shop is much <strong>nicer</strong>.</li>
+                    <li>The sky was <strong>multicolored</strong>.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Adverbs</h2>
+                An adverb is a word that modifiesverbs, adjectives and other Adverbs.
+                "Modifies" means "tells more about". An adverb tell more about how the verb is 
+                being done. Many adverbs end in "-ly".
+                <br> <br>
+                <strong>Example: </strong>
+                <ul>
+                    <li>Emma writes <strong>quickly</strong> and <strong>well</strong>.</li>
+                    <li>The midwives waited <strong>patiently</strong> through a long labor.</li>
+                    <li>The brother were <strong>badly</strong> injured in the fight.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Prepositions</h2>
+                A preposition is usually a shoort word placed before a substantive (or pronoun)
+                abd indicating the relation of that substantive to other parts of the sentences (mostly verbs).
+                <br> <br>
+                <strong>Example: </strong>in, of, at, by, for, with, under, above, into, onto, upon, about, 
+                behind, beside, before, after, towards, inside, outside, below, around, etc.
+                <ul>
+                    <li>She sat <strong>on</strong> chair.</li>
+                    <li>There is <strong>some</strong> fruits in the fridge.</li>
+                    <li>He was hinding <strong>under</strong> the roof</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Conjunctions</h2>
+                The conjunction is the part of speech used as a "joiner" for words, phrases, or clauses in a particular sentenses
 
+                <br> <br>
+                <strong>Example: </strong>For, and, nor, but, or, yet, so (Fanboys)
+                <ul>
+                    <li>Pizza <strong>and</strong> burgers are my favorite snacks.</li>
+                    <li>Emma did not like bananas <strong>but</strong> she loved apples.</li>
+                    <li>You may bring a main dish <strong>or</strong> a side dish to the party.</li>
+                </ul>                
+            </div>
+            <div class="Rules"> 
+                <h2>Interjection</h2>
+                in grammer, an interjection is part of speech or (a laxical categoty) whitch
+                is used to show a short sudden expression of emotion. Interjections are exclamations like Oh!, 
+                Um or Ah! They have no real grammatical value but we them quite often, usualy more in 
+                speaking than in writing. An interjection is a sjort word or phrase that shows 
+                emotion. It often stands alone, unconnected to a sentence.
+                <br> <br>
+                <strong>Example: </strong>
+                <ul>
+                    <li><strong>Oops!</strong> I did it again!</li>
+                    <li><strong>Ooh</strong>, what a lovely dress!</li>
+                    <li><strong>Alas</strong>, it was not to be.</li>
+                    <li>You two ate dating? <strong>Awesome!</strong></li>
+                    <li><strong>Bingo!</strong> Right on target!</li>
+                    <li><strong>Oh</strong> wow, that is so cool!</li>
+                </ul>                
+            </div>
+            
+            <div class="Rules"> 
+                <h2>Determiners</h2>
+                Determiners are words that introduce nouns and specify 
+                their meaning in terms of quantity, proximity, definiteness, or possession. 
+                <br> <br>
+                <strong>Example: </strong> A, an, the, this, these, those, some, many etc.
+                <ul>
+                    <li><strong>My</strong> house is being renovated.</li>
+                    <li><strong>This</strong> movie is interesting.</li>
+                    <li>I bought <strong>some</strong> apples and mangoes.</li>
+                    
+
+
+                </ul>                
+            </div>
         </div>
         <div class="SupportContent">
             <div class="Random">
@@ -306,6 +187,7 @@ border-radius
                 <p>including the best infographics on grammar, writing, and productivity. No worries, it’s free, and your privacy is our top priority. Your email won’t be shared with anyone else, and you can unsubscribe at any time</p>
             
             </div>
+
         </div>
     </content>
     <footer>
